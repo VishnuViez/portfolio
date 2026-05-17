@@ -49,28 +49,6 @@ A stunning, modern portfolio website built with **Flutter Web**, featuring beaut
 - Dart SDK
 - Chrome browser (for web testing)
 
-### Setup
-
-1. **Navigate to the portfolio directory:**
-```bash
-cd /Users/vishnu/Desktop/portfolio
-```
-
-2. **Install dependencies:**
-```bash
-flutter pub get
-```
-
-3. **Run on Chrome (Web):**
-```bash
-flutter run -d chrome
-```
-
-4. **Build for production:**
-```bash
-flutter build web --release
-```
-
 The production build will be in the `build/web` directory.
 
 ## 🎨 Customization
