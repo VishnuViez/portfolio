@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VShop</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_orders">Orders</string>
+    <string name="hint_search">Search products…</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="empty_orders">No orders yet</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="skip_login">Continue as Guest</string>
+</resources>

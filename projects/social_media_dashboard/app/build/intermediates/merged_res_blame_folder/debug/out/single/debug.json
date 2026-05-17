@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_activity_analytics.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_analytics.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/menu_main_menu.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_activity_create_post.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_create_post.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_item_post.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/item_post.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/drawable_ic_like.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/drawable/ic_like.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_activity_profile.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/drawable_ic_comment.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/drawable/ic_comment.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_item_comment.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/item_comment.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/layout_activity_post_detail.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_post_detail.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-merged_res-35:/drawable_ic_share.xml.flat",
+        "source": "com.vishnu.socialdashboard.app-main-37:/drawable/ic_share.xml"
+    }
+]

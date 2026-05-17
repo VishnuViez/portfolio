@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#F59E0B</color>
+    <color name="background">#F8FAFC</color>
+    <color name="black">#000000</color>
+    <color name="error">#EF4444</color>
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="secondary">#10B981</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <string name="action_cart">Cart</string>
+    <string name="action_orders">Orders</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="app_name">VShop</string>
+    <string name="checkout">Checkout</string>
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="empty_orders">No orders yet</string>
+    <string name="gcm_defaultSenderId" translatable="false">000000000000</string>
+    <string name="google_api_key" translatable="false">AIzaSyDEMO_KEY_REPLACE_WITH_REAL_KEY</string>
+    <string name="google_app_id" translatable="false">1:000000000000:android:0000000000000000</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEMO_KEY_REPLACE_WITH_REAL_KEY</string>
+    <string name="google_storage_bucket" translatable="false">vishnu-ecommerce-demo.appspot.com</string>
+    <string name="hint_search">Search products…</string>
+    <string name="login">Login</string>
+    <string name="project_id" translatable="false">vishnu-ecommerce-demo</string>
+    <string name="register">Register</string>
+    <string name="skip_login">Continue as Guest</string>
+    <style name="Theme.ShopVishnu" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+    <style name="Theme.ShopVishnu.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

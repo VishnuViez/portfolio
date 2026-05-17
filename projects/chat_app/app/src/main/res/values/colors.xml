@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="primary_light">#B3AEFF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#FF6584</color>
+    <color name="secondary_light">#FFB3C1</color>
+
+    <!-- Tertiary -->
+    <color name="tertiary">#43E97B</color>
+    <color name="tertiary_light">#A8F0C6</color>
+
+    <!-- Dark surfaces -->
+    <color name="dark_surface">#1A1A2E</color>
+    <color name="dark_background">#16213E</color>
+    <color name="dark_surface_variant">#1F2937</color>
+    <color name="dark_card">#242B3D</color>
+
+    <!-- Light surfaces -->
+    <color name="light_surface">#FFFBFE</color>
+    <color name="light_background">#F8F9FA</color>
+    <color name="light_surface_variant">#E8EAF0</color>
+
+    <!-- Status -->
+    <color name="online_green">#4CAF50</color>
+    <color name="offline_gray">#9E9E9E</color>
+
+    <!-- Standard -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

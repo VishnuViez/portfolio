@@ -1,0 +1,4 @@
+-keep class com.vishnu.ecommerce.data.remote.model.** { *; }
+-keep class com.vishnu.ecommerce.data.local.entity.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*

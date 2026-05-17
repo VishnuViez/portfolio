@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "595237524778",
+    "project_id": "vchat-e7fe2",
+    "storage_bucket": "vchat-e7fe2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595237524778:android:48e5aebf7fa37ecf293a53",
+        "android_client_info": {
+          "package_name": "com.vishnu.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc5iu7ekMEmzip7oLYP14gqmvEdFxoVoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

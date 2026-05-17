@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/item_cart.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/item_cart.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/item_order.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/item_order.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/item_product.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/item_product.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_product_detail.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_orders.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/activity_orders.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_login.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_main.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_cart.xml",
+        "source": "/Users/vishnu/.gradle/daemon/8.9/com.vishnu.ecommerce.app-main-64:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.vishnu.ecommerce.app-mergeDebugResources-61:/layout/activity_main.xml",
+        "source": "com.vishnu.ecommerce.app-main-64:/layout/activity_main.xml"
+    }
+]

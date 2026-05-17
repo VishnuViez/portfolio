@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Social Dashboard</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_profile">Profile</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="create_post">Create Post</string>
+    <string name="post_hint">What\'s on your mind?</string>
+    <string name="btn_submit">Post</string>
+    <string name="btn_follow">Follow</string>
+    <string name="label_posts">Posts</string>
+    <string name="label_followers">Followers</string>
+    <string name="label_following">Following</string>
+    <string name="label_comments">Comments</string>
+    <string name="label_likes">likes</string>
+    <string name="label_shares">shares</string>
+    <string name="no_posts">No posts yet</string>
+    <string name="no_comments">No comments yet</string>
+    <string name="error_empty_post">Post content cannot be empty</string>
+</resources>

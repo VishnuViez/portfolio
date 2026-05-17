@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">595237524778</string>
+    <string name="google_api_key" translatable="false">AIzaSyAc5iu7ekMEmzip7oLYP14gqmvEdFxoVoQ</string>
+    <string name="google_app_id" translatable="false">1:595237524778:android:48e5aebf7fa37ecf293a53</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAc5iu7ekMEmzip7oLYP14gqmvEdFxoVoQ</string>
+    <string name="google_storage_bucket" translatable="false">vchat-e7fe2.firebasestorage.app</string>
+    <string name="project_id" translatable="false">vchat-e7fe2</string>
+</resources>

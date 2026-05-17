@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu - Mobile App Developer | 3D Portfolio</title>
+    <meta name="description" content="Interactive 3D portfolio showcasing mobile app development expertise">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name" id="hero-name">Vishnu</span>
+                    </h1>
+                    <h2 class="hero-subtitle" id="typed-text"></h2>
+                    <p class="hero-description">
+                        Crafting seamless mobile experiences with native Android & cross-platform expertise
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get in Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vishnuviez" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/vishnuviez" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:vishnuviez@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="decorative-circle"></div>
+                    <div class="profile-image-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Vishnu - Mobile App Developer" class="profile-image">
+                    </div>
+                    <!-- Floating Tech Badges -->
+                    <div class="tech-badge" style="--angle: -30deg; --distance: 180px; --delay: 0.4s; --color: #02569B;">
+                        <i class="fab fa-flutter"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="tech-badge" style="--angle: 30deg; --distance: 180px; --delay: 0.5s; --color: #7F52FF;">
+                        <i class="fab fa-android"></i>
+                        <span>Kotlin</span>
+                    </div>
+                    <div class="tech-badge" style="--angle: 90deg; --distance: 180px; --delay: 0.6s; --color: #3776AB;">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-badge" style="--angle: 150deg; --distance: 180px; --delay: 0.7s; --color: #8E24AA;">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="tech-badge" style="--angle: 210deg; --distance: 180px; --delay: 0.8s; --color: #FF9900;">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-badge" style="--angle: 270deg; --distance: 180px; --delay: 0.9s; --color: #2496ED;">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate <strong>Mobile Application Developer</strong> specializing in building 
+                        high-performance Android applications. With expertise in <strong>Kotlin, Java, and Flutter</strong>, 
+                        I create elegant solutions that combine robust architecture patterns (MVP, MVVM, MVC) with 
+                        modern development practices.
+                    </p>
+                    <p>
+                        I also leverage <strong>Python, Flask, Machine Learning, and AI</strong> to build intelligent, 
+                        data-driven applications that solve real-world problems. My approach focuses on writing clean, 
+                        maintainable code and creating exceptional user experiences.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Mobile First</h4>
+                                <p>Native & Cross-platform development</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>AI Integration</h4>
+                                <p>Machine Learning & AI solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Architecture patterns & best practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-3d-container">
+                    <canvas id="about-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Skills & Technologies
+            </h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be dynamically loaded -->
+            </div>
+            <div class="skills-3d-container">
+                <canvas id="skills-canvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Work Experience
+            </h2>
+            <div class="experience-timeline" id="experience-timeline">
+                <!-- Experience will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Let's build something amazing together</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:vishnuviez@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vishnuviez@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/vishnuviez" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/vishnuviez</span>
+                        </a>
+                        <a href="https://linkedin.com/in/vishnuviez" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/vishnuviez</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Vishnu. Built with Three.js</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-container">
+        <!-- Chatbot Button -->
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Open chat">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-content">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>Vishnu's Assistant</h3>
+                        <p>Ask me anything!</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="chatbot-close" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <!-- Messages will be added here -->
+            </div>
+            <div class="chatbot-typing" id="chatbot-typing" style="display: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="chatbot-input-container">
+                <input 
+                    type="text" 
+                    id="chatbot-input" 
+                    class="chatbot-input" 
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                />
+                <button id="chatbot-send" class="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="chatbot-suggestions" id="chatbot-suggestions">
+                <!-- Suggestions will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="portfolioData.js"></script>
+    <script src="scene.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

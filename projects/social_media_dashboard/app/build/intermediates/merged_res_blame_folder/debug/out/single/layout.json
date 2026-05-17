@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/activity_post_detail.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_post_detail.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/activity_create_post.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_create_post.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/item_post.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/item_post.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/item_comment.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/item_comment.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/activity_profile.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/activity_analytics.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_analytics.xml"
+    },
+    {
+        "merged": "com.vishnu.socialdashboard.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "com.vishnu.socialdashboard.app-main-37:/layout/activity_main.xml"
+    }
+]
