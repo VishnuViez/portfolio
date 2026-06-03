@@ -76,6 +76,7 @@ to build intelligent, data-driven applications that solve real-world problems.
     Project(
       title: "E-Commerce Mobile App",
       description: "A full-featured e-commerce application with product catalog, cart management, and secure payment integration.",
+      githubUrl: "https://github.com/VishnuViez/portfolio/tree/main/projects/ecommerce_app",
       technologies: ["Kotlin", "MVVM", "Retrofit", "Room", "Firebase"],
       highlights: [
         "Implemented clean architecture with MVVM pattern",
@@ -87,6 +88,7 @@ to build intelligent, data-driven applications that solve real-world problems.
     Project(
       title: "Fitness Tracker with AI",
       description: "An intelligent fitness tracking app that uses ML models to provide personalized workout recommendations.",
+      githubUrl: "https://github.com/VishnuViez/portfolio/tree/main/projects/fitness_tracker_ai",
       technologies: ["Flutter", "Python", "TensorFlow", "Flask", "Firebase"],
       highlights: [
         "Built ML model for exercise recognition with 94% accuracy",
@@ -98,6 +100,7 @@ to build intelligent, data-driven applications that solve real-world problems.
     Project(
       title: "Social Media Dashboard",
       description: "A comprehensive social media management dashboard for scheduling posts and analytics.",
+      githubUrl: "https://github.com/VishnuViez/portfolio/tree/main/projects/social_media_dashboard",
       technologies: ["Java", "MVP", "Retrofit", "Material Design"],
       highlights: [
         "Multi-account management for 5+ social platforms",
@@ -109,6 +112,7 @@ to build intelligent, data-driven applications that solve real-world problems.
     Project(
       title: "Chat Application",
       description: "Real-time messaging app with end-to-end encryption and multimedia support.",
+      githubUrl: "https://github.com/VishnuViez/portfolio/tree/main/projects/chat_app",
       technologies: ["Kotlin", "WebSockets", "Firebase", "Jetpack Compose"],
       highlights: [
         "Real-time messaging with WebSocket connection",
@@ -120,6 +124,7 @@ to build intelligent, data-driven applications that solve real-world problems.
     Project(
       title: "Weather Forecast App",
       description: "Beautiful weather app with accurate forecasts and location-based alerts.",
+      githubUrl: "https://github.com/VishnuViez/portfolio/tree/main/projects/weather_forecast",
       technologies: ["Flutter", "REST API", "Provider", "Geolocator"],
       highlights: [
         "Integration with multiple weather APIs",

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:visibility_detector/visibility_detector.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../data/portfolio_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../widgets/animations/card_3d.dart';
@@ -114,15 +113,28 @@ class _ProjectCard extends StatefulWidget {
 
 class _ProjectCardState extends State<_ProjectCard> {
   Future<void> _launchUrl(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
+    final uri = Uri.tryParse(url);
+    if (uri == null) {
+      return;
+    }
+
+    final didLaunch = await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+      webOnlyWindowName: '_blank',
+    );
+
+    if (!didLaunch && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open link')),
+      );
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final String? githubUrl = widget.project.githubUrl;
     
     // Different gradient combinations for each card
     final gradients = [
@@ -136,9 +148,12 @@ class _ProjectCardState extends State<_ProjectCard> {
     final cardIndex = widget.delay ~/ 200;
     final gradientColors = gradients[cardIndex % gradients.length];
     
-    return Card3D(
+    return MouseRegion(
+      cursor: githubUrl != null ? SystemMouseCursors.click : MouseCursor.defer,
+      child: Card3D(
       maxRotation: 0.05,
       enableParallax: true,
+      onTap: githubUrl != null ? () => _launchUrl(githubUrl) : null,
       child: Card(
         elevation: 0,
         clipBehavior: Clip.antiAlias,
@@ -292,45 +307,15 @@ class _ProjectCardState extends State<_ProjectCard> {
               ),
               
               const SizedBox(height: 16),
-              
-              // Action Buttons
-              Row(
-                children: [
-                  if (widget.project.githubUrl != null)
-                    Expanded(
-                      child: OutlinedButton.icon(
-                        onPressed: () => _launchUrl(widget.project.githubUrl!),
-                        icon: const FaIcon(FontAwesomeIcons.github, size: 16),
-                        label: const Text('Code'),
-                        style: OutlinedButton.styleFrom(
-                          side: BorderSide(color: gradientColors[0], width: 2),
-                          foregroundColor: gradientColors[0],
-                        ),
-                      ),
-                    ),
-                  if (widget.project.githubUrl != null && 
-                      widget.project.liveUrl != null)
-                    const SizedBox(width: 12),
-                  if (widget.project.liveUrl != null)
-                    Expanded(
-                      child: ElevatedButton.icon(
-                        onPressed: () => _launchUrl(widget.project.liveUrl!),
-                        icon: const Icon(Icons.open_in_new, size: 16),
-                        label: const Text('Live'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: gradientColors[0],
-                          foregroundColor: Colors.white,
-                        ),
-                      ),
-                    ),
-                ],
-              ),
+
+              // Intentionally no action buttons; the whole card is clickable.
                   ],
                 ),
               ),
             ],
           ),
         ),
+      ),
       ),
     ).animate(target: widget.isVisible ? 1 : 0)
      .fadeIn(duration: 600.ms, delay: widget.delay.ms)
