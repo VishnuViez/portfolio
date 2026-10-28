@@ -6,15 +6,41 @@
     <title>Vishnu · Software Engineer</title>
     <meta name="description" content="Vishnu — software engineer with 5 years building Android and point-of-sale apps in Java and Kotlin. Based in Plano, TX.">
     <meta name="theme-color" content="#212121">
+    <link rel="canonical" href="https://vishnuviez.github.io/portfolio/">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://vishnuviez.github.io/portfolio/">
+    <meta property="og:title" content="Vishnu · Software Engineer">
+    <meta property="og:description" content="Software engineer with 5 years building Android and point-of-sale apps in Java and Kotlin. Based in Plano, TX.">
+    <meta property="og:image" content="https://vishnuviez.github.io/portfolio/assets/images/profile.jpg">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Portrait of Vishnu">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vishnu Kannampattuparambil Vinod",
+        "alternateName": "Vishnu",
+        "jobTitle": "Software Engineer",
+        "url": "https://vishnuviez.github.io/portfolio/",
+        "image": "https://vishnuviez.github.io/portfolio/assets/images/profile.jpg",
+        "email": "mailto:vishnuviez@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Plano", "addressRegion": "TX", "addressCountry": "US" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Texas at Dallas" },
+        "sameAs": ["https://github.com/VishnuViez", "https://www.linkedin.com/in/vishnuviez"]
+    }
+    </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <header class="nav" id="nav">
         <div class="nav-inner">
             <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
@@ -32,14 +58,14 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero" id="home">
             <div class="container hero-grid">
                 <div class="hero-text">
                     <p class="eyebrow">HI THERE,</p>
                     <h1 class="hero-name">I'm Vishnu</h1>
                     <p class="hero-role">SOFTWARE ENGINEER + ANDROID &amp; <span class="nowrap">POINT-OF-SALE</span></p>
-                    <p class="hero-blurb">I have 5 years of experience building Android and point-of-sale apps in Java and Kotlin, and I'm now building applied AI skills. Based in Plano, TX.</p>
+                    <p class="hero-blurb">I've spent 5 years building Android and point-of-sale apps in Java and Kotlin, and I'm now working on applied AI. Based in Plano, TX.</p>
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
                 </div>
                 <div class="hero-photo">
@@ -55,7 +81,7 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>I'm a software engineer with 5 years of production experience building Android and point-of-sale apps in Java and Kotlin. That includes integrating PAX terminal hardware, barcode and QR payment flows, and features for merchants.</p>
-                        <p>I own work from end to end: architecture, REST API integration, release management and monitoring after launch. I'm building applied AI skills through the IBM SkillsBuild AI program, working with RAG pipelines, LangChain, LangGraph and vector databases. I'm also doing an M.S. in Computer Engineering at UT Dallas.</p>
+                        <p>I own work from end to end: architecture, REST API integration, release management and monitoring after launch. Right now I'm adding applied AI through the IBM SkillsBuild AI program, working with RAG pipelines, LangChain, LangGraph and vector databases, alongside an M.S. in Computer Engineering at UT Dallas.</p>
                     </div>
                     <ul class="stats">
                         <li><strong>5</strong><span>years of production experience</span></li>
@@ -145,8 +171,8 @@
                     </article>
                     <article class="card project">
                         <h3>CometDate</h3>
-                        <p>A dating app for verified UT Dallas students, with documented architecture, data and security models.</p>
-                        <ul class="tags"><li>Flutter</li><li>Dart</li><li>Firebase</li></ul>
+                        <p>A dating app for verified UT Dallas students. Matching, discovery and premium status are decided in Cloud Functions and Firestore rules, so the app can't forge a match or unlock premium on its own.</p>
+                        <ul class="tags"><li>Flutter</li><li>Firebase</li><li>Cloud Functions</li></ul>
                         <div class="links"><span class="private">Private repo</span></div>
                     </article>
                     <article class="card project">
@@ -156,8 +182,9 @@
                     </article>
                     <article class="card project">
                         <h3>MacNotch</h3>
-                        <p>A productivity hub that lives in the MacBook notch.</p>
+                        <p>A macOS app that turns the MacBook notch into a productivity hub.</p>
                         <ul class="tags"><li>Swift</li><li>macOS</li></ul>
+                        <div class="links"><span class="private">In development</span></div>
                     </article>
                     <article class="card project">
                         <h3>Employee Management</h3>
@@ -167,8 +194,8 @@
                     </article>
                     <article class="card project">
                         <h3>SmartPDF</h3>
-                        <p>A PDF editor that runs in the browser.</p>
-                        <ul class="tags"><li>Next.js</li><li>JavaScript</li></ul>
+                        <p>A web toolkit for PDFs: merge, split, compress, edit, sign, watermark and protect them, and convert them to Word, Excel, PowerPoint or images. Scanned pages go through Gemini for OCR, and paid plans run on Stripe.</p>
+                        <ul class="tags"><li>Next.js</li><li>pdf-lib</li><li>Gemini API</li><li>Stripe</li></ul>
                         <div class="links"><a href="https://github.com/VishnuViez/smartpdf" target="_blank" rel="noopener">View repo ↗</a></div>
                     </article>
                 </div>
@@ -178,7 +205,7 @@
         <section class="section" id="experience">
             <div class="container">
                 <p class="section-kicker">Experience</p>
-                <h2 class="section-title">Where I've worked</h2>
+                <h2 class="section-title">Work and education</h2>
                 <ol class="timeline">
                     <li>
                         <div class="when">Feb 2023 – Dec 2024</div>
@@ -238,7 +265,7 @@
                 <a href="mailto:vishnuviez@gmail.com" class="btn btn-primary">vishnuviez@gmail.com</a>
                 <ul class="socials">
                     <li><a href="https://github.com/VishnuViez" target="_blank" rel="noopener">GitHub</a></li>
-                    <li><a href="https://linkedin.com/in/vishnuviez" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/vishnuviez" target="_blank" rel="noopener">LinkedIn</a></li>
                     <li><a href="assets/Vishnu_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
                 </ul>
             </div>
@@ -253,6 +280,6 @@
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5l-7 7m7-7l7 7M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
 
-    <script src="main.js?v=6" defer></script>
+    <script src="main.js?v=7" defer></script>
 </body>
 </html>
