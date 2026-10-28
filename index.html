@@ -1,38 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/portfolio/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>portfolio</title>
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu · Software Engineer</title>
+    <meta name="description" content="Vishnu — software engineer with 5 years building Android and point-of-sale apps in Java and Kotlin. Based in Plano, TX.">
+    <meta name="theme-color" content="#212121">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#home" class="logo" aria-label="Vishnu, home">
+                <span class="logo-block" aria-hidden="true"></span>
+                <span class="logo-mark">V</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact Me</a>
+                <a href="assets/Vishnu_Resume.pdf" class="btn btn-pill" target="_blank" rel="noopener">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">HI THERE,</p>
+                    <h1 class="hero-name">I'm Vishnu</h1>
+                    <p class="hero-role">SOFTWARE ENGINEER + ANDROID &amp; <span class="nowrap">POINT-OF-SALE</span></p>
+                    <p class="hero-blurb">I have 5 years of experience building Android and point-of-sale apps in Java and Kotlin, and I'm now building applied AI skills. Based in Plano, TX.</p>
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                </div>
+                <div class="hero-photo">
+                    <img src="assets/images/profile.jpg" alt="Portrait of Vishnu" width="1080" height="1080" fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <p class="section-kicker">About</p>
+                <h2 class="section-title">Who I am</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a software engineer with 5 years of production experience building Android and point-of-sale apps in Java and Kotlin. That includes integrating PAX terminal hardware, barcode and QR payment flows, and features for merchants.</p>
+                        <p>I own work from end to end: architecture, REST API integration, release management and monitoring after launch. I'm building applied AI skills through the IBM SkillsBuild AI program, working with RAG pipelines, LangChain, LangGraph and vector databases. I'm also doing an M.S. in Computer Engineering at UT Dallas.</p>
+                    </div>
+                    <ul class="stats">
+                        <li><strong>5</strong><span>years of production experience</span></li>
+                        <li><strong>AWS</strong><span>&amp; Linux certified</span></li>
+                        <li><strong>M.S.</strong><span>Computer Engineering, UT Dallas</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <p class="section-kicker">Skills</p>
+                <h2 class="section-title">What I work with</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Languages</h3>
+                        <p>Java, Kotlin, Dart, XML, SQL</p>
+                    </article>
+                    <article class="card">
+                        <h3>AI / ML</h3>
+                        <p>RAG, LangChain, LangGraph, vector databases and embeddings, semantic search, LLM integration, prompt engineering, agentic workflows, NLP</p>
+                    </article>
+                    <article class="card">
+                        <h3>Mobile &amp; POS</h3>
+                        <p>Native Android, Flutter, PAX terminal hardware, merchant POS SDK</p>
+                    </article>
+                    <article class="card">
+                        <h3>Payments</h3>
+                        <p>Barcode and QR scanning (EAN, ITF, UPC, QR), transaction flows, payment gateway integration</p>
+                    </article>
+                    <article class="card">
+                        <h3>Architecture</h3>
+                        <p>MVVM, MVC, MVP, Clean Architecture, BLoC, modular design</p>
+                    </article>
+                    <article class="card">
+                        <h3>APIs &amp; Services</h3>
+                        <p>RESTful APIs, Retrofit, JSON, Firebase (Crashlytics, FCM, Analytics)</p>
+                    </article>
+                    <article class="card">
+                        <h3>Databases</h3>
+                        <p>SQLite, Firebase Firestore, vector stores</p>
+                    </article>
+                    <article class="card">
+                        <h3>DevOps &amp; Tools</h3>
+                        <p>Git, JIRA, CI/CD, ProGuard, Agile/Scrum, sprint planning</p>
+                    </article>
+                    <article class="card">
+                        <h3>Practices</h3>
+                        <p>TDD, code review, peer mentoring, release management, L3 support, app signing, secure API auth headers</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <p class="section-kicker">Projects</p>
+                <h2 class="section-title">Things I've built</h2>
+                <div class="card-grid projects">
+                    <article class="card project">
+                        <h3>Cosmos</h3>
+                        <p>A self-hosted AI workspace with chat, agents, research, documents, email, notes, calendar and local model workflows.</p>
+                        <ul class="tags"><li>Python</li><li>LLMs</li><li>Self-hosted</li></ul>
+                        <div class="links"><a href="https://github.com/VishnuViez/Cosmos" target="_blank" rel="noopener">View repo ↗</a></div>
+                    </article>
+                    <article class="card project">
+                        <h3>Clank Keys</h3>
+                        <p>A Mac app that plays mechanical keyboard sounds. It reads the MacBook's built-in accelerometer to tell how hard each key was hit, then plays a switch sound to match.</p>
+                        <ul class="tags"><li>Swift</li><li>macOS</li><li>Sensors</li></ul>
+                        <div class="links">
+                            <a href="https://clankkeys.web.app" target="_blank" rel="noopener">Website ↗</a>
+                            <a href="https://github.com/VishnuViez/clank-keys-releases" target="_blank" rel="noopener">Downloads ↗</a>
+                        </div>
+                    </article>
+                    <article class="card project">
+                        <h3>MedMentor AI</h3>
+                        <p>A medical education platform with an interactive anatomy explorer, spaced-repetition flashcards, quizzes and gamified study plans.</p>
+                        <ul class="tags"><li>JavaScript</li><li>Vite</li><li>Firebase</li></ul>
+                        <div class="links"><span class="private">Private repo</span></div>
+                    </article>
+                    <article class="card project">
+                        <h3>Backdrop</h3>
+                        <p>Live video wallpapers for macOS. It runs as a menu-bar app and draws looping video behind the desktop icons. Wallpapers come from a cloud catalog and download only when picked.</p>
+                        <ul class="tags"><li>Swift</li><li>macOS</li><li>Cloud catalog</li></ul>
+                        <div class="links"><span class="private">Private repo</span></div>
+                    </article>
+                    <article class="card project">
+                        <h3>CometDate</h3>
+                        <p>A dating app for verified UT Dallas students, with documented architecture, data and security models.</p>
+                        <ul class="tags"><li>Flutter</li><li>Dart</li><li>Firebase</li></ul>
+                        <div class="links"><span class="private">Private repo</span></div>
+                    </article>
+                    <article class="card project">
+                        <h3>AnyStream</h3>
+                        <p>Watch public-domain films and TV from the Internet Archive for free. For new releases, it shows trailers and where each title streams legally in your region, using TMDB.</p>
+                        <ul class="tags"><li>Node.js</li><li>TMDB API</li><li>Internet Archive</li></ul>
+                    </article>
+                    <article class="card project">
+                        <h3>MacNotch</h3>
+                        <p>A productivity hub that lives in the MacBook notch.</p>
+                        <ul class="tags"><li>Swift</li><li>macOS</li></ul>
+                    </article>
+                    <article class="card project">
+                        <h3>Employee Management</h3>
+                        <p>A full-stack staff and department manager for a dental practice. It has a REST API, many-to-many staff and department modeling, and a one-command Docker Compose deploy.</p>
+                        <ul class="tags"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Docker</li></ul>
+                        <div class="links"><a href="https://github.com/VishnuViez/Employee-Management-CRUD" target="_blank" rel="noopener">View repo ↗</a></div>
+                    </article>
+                    <article class="card project">
+                        <h3>SmartPDF</h3>
+                        <p>A PDF editor that runs in the browser.</p>
+                        <ul class="tags"><li>Next.js</li><li>JavaScript</li></ul>
+                        <div class="links"><a href="https://github.com/VishnuViez/smartpdf" target="_blank" rel="noopener">View repo ↗</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <p class="section-kicker">Experience</p>
+                <h2 class="section-title">Where I've worked</h2>
+                <ol class="timeline">
+                    <li>
+                        <div class="when">Feb 2023 – Dec 2024</div>
+                        <div class="what">
+                            <h3>Software Engineer (Mobile), SDE-2 <span>· CronJ IT Technologies</span></h3>
+                            <ul>
+                                <li>Led feature delivery across multi-platform Android apps, from requirements and technical design through production release and fixing defects after launch.</li>
+                                <li>Improved app performance by profiling and refactoring the data-binding and view-binding code in several modules, and applied Clean Architecture to reduce technical debt.</li>
+                                <li>Owned the full release pipeline (build signing, staged rollouts and hotfixes) to Google Play Store versioning, signing and deployment standards.</li>
+                                <li>Set up production monitoring with Firebase Crashlytics and Analytics, and triaged live defects from real-user telemetry to cut time to resolution.</li>
+                                <li>Mentored junior engineers through code review, guided architecture improvements and drove CI/CD best practices across the team.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="when">Dec 2021 – Nov 2022</div>
+                        <div class="what">
+                            <h3>Software Engineer <span>· Aroha Technologies</span></h3>
+                            <ul>
+                                <li>Built point-of-sale features on PAX payment terminals: integrated the device SDK, handled transaction flows and worked within embedded hardware limits.</li>
+                                <li>Implemented barcode and QR payment scanning (EAN, ITF, UPC, QR) with play-services-vision for merchant checkout.</li>
+                                <li>Integrated REST APIs with Retrofit, including serialization, auth headers, retry logic and error states for secure payment data.</li>
+                                <li>Built several production modules in Java on MVVM, with presentation, business logic and data layers each testable on its own.</li>
+                                <li>Designed reusable UI components from wireframes, cutting duplicated code and speeding up rendering on repeated merchant screens.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="when">Jun 2019 – Aug 2021</div>
+                        <div class="what">
+                            <h3>Software Engineer <span>· Infount</span></h3>
+                            <ul>
+                                <li>Designed and delivered Android apps for clients, checking that proposed features were feasible before building them.</li>
+                                <li>Maintained, debugged and shipped updates across several Java and Android projects at once, and took part in sprint planning and estimation.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="when">In progress</div>
+                        <div class="what">
+                            <h3>M.S. Computer Engineering <span>· University of Texas at Dallas</span></h3>
+                            <ul>
+                                <li>B.C.A. Computer Applications, Koshys Institute of Management Studies. GPA 7.72 / 10.</li>
+                                <li>Certifications: IBM SkillsBuild Artificial Intelligence (in progress), AWS, Cloud Computing, Linux Administration.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container contact">
+                <p class="section-kicker">Contact</p>
+                <h2 class="section-title">Let's work together</h2>
+                <p class="contact-blurb">I'm open to software engineering roles in mobile, point-of-sale and applied AI, and I'm willing to relocate. The quickest way to reach me is email.</p>
+                <a href="mailto:vishnuviez@gmail.com" class="btn btn-primary">vishnuviez@gmail.com</a>
+                <ul class="socials">
+                    <li><a href="https://github.com/VishnuViez" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/vishnuviez" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="assets/Vishnu_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© 2026 Vishnu</div>
+    </footer>
+
+    <a href="#home" class="to-top" id="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5l-7 7m7-7l7 7M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <script src="main.js?v=5" defer></script>
 </body>
 </html>
