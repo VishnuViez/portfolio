@@ -39,3 +39,23 @@ const onScroll = () => {
 };
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+// The avatar border repaints on every frame, so it only runs while it's on
+// screen, and stays still for visitors who prefer reduced motion.
+const avatar = document.querySelector('.avatar');
+const avatarFilters = document.querySelector('.avatar-filters');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let avatarInView = true;
+
+const updateAvatarMotion = () => {
+    const animate = avatarInView && !reducedMotion.matches;
+    avatar.classList.toggle('is-paused', !animate);
+    if (animate) avatarFilters.unpauseAnimations();
+    else avatarFilters.pauseAnimations();
+};
+
+new IntersectionObserver(([entry]) => {
+    avatarInView = entry.isIntersecting;
+    updateAvatarMotion();
+}).observe(avatar);
+reducedMotion.addEventListener('change', updateAvatarMotion);

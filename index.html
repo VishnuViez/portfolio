@@ -38,7 +38,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -70,7 +70,35 @@
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
                 </div>
                 <div class="hero-photo">
-                    <img src="assets/images/profile.jpg" alt="Portrait of Vishnu" width="1080" height="1080" fetchpriority="high">
+                    <div class="avatar">
+                        <div class="avatar-image">
+                            <img src="assets/images/profile.jpg" alt="Portrait of Vishnu" width="1080" height="1080" fetchpriority="high">
+                        </div>
+                    </div>
+                    <svg class="avatar-filters" xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false">
+                        <defs>
+                            <filter id="squiggly-0">
+                                <feTurbulence baseFrequency="0.01" numOctaves="5" result="noise" seed="0">
+                                    <animate attributeName="baseFrequency" dur="40s" values="0.01; 0.04; 0.01" repeatCount="indefinite"/>
+                                </feTurbulence>
+                                <feDisplacementMap in="SourceGraphic" in2="noise" scale="36"/>
+                            </filter>
+                            <filter id="squiggly-1">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.02" numOctaves="5" result="noise" seed="0">
+                                    <animate attributeName="baseFrequency" dur="40s" values="0.01 0.02; 0.03 0.04; 0.01 0.02" repeatCount="indefinite"/>
+                                </feTurbulence>
+                                <feDisplacementMap in="SourceGraphic" in2="noise" scale="180"/>
+                            </filter>
+                            <filter id="squiggly-2">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.05 0.06" numOctaves="5" result="noise" seed="0">
+                                    <animate attributeName="baseFrequency" dur="40s" values="0.05 0.06; 0.1 0.12; 0.05 0.06" repeatCount="indefinite"/>
+                                </feTurbulence>
+                                <feDisplacementMap in="SourceGraphic" in2="noise" scale="36">
+                                    <animate attributeName="scale" dur="4s" values="36;72;90;180;360;120;60;36" repeatCount="indefinite"/>
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -281,6 +309,6 @@
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5l-7 7m7-7l7 7M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
 
-    <script src="main.js?v=7" defer></script>
+    <script src="main.js?v=11" defer></script>
 </body>
 </html>
