@@ -153,15 +153,55 @@ a { color: inherit; }
 .hero-blurb { margin: 0 0 36px; max-width: 400px; font-size: 16px; }
 
 .hero-photo { display: flex; justify-content: center; }
-.hero-photo img {
+
+/*
+ * Animated ripped border, adapted from "User Avatar with animated ripped
+ * border" by Amit: https://codepen.io/ghaste/pen/YPZamYa
+ * Three rings are distorted by the SVG filters in index.html, and a noisy
+ * mask tears the edge of the whole circle.
+ */
+.avatar {
+    --mask-animated: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 150%22 preserveAspectRatio=%22none%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence baseFrequency=%220.1 0.2%22 seed=%220%22%3E%3Canimate attributeName=%22baseFrequency%22 dur=%2240s%22 values=%220.1 0.2; 0.3 0.4; 0.1 0.2%22 repeatCount=%22indefinite%22/%3E%3C/feTurbulence%3E%3CfeDisplacementMap scale=%2210%22 in=%22SourceGraphic%22/%3E%3C/filter%3E%3Ccircle filter=%22url%28%23noise%29%22 r=%2270%22 cx=%2275%22 cy=%2275%22/%3E%3C/svg%3E");
+    --mask-static: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 150%22 preserveAspectRatio=%22none%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence baseFrequency=%220.1 0.2%22 seed=%220%22/%3E%3CfeDisplacementMap scale=%2210%22 in=%22SourceGraphic%22/%3E%3C/filter%3E%3Ccircle filter=%22url%28%23noise%29%22 r=%2270%22 cx=%2275%22 cy=%2275%22/%3E%3C/svg%3E");
+    position: relative;
     width: min(440px, 100%);
-    height: auto;
     aspect-ratio: 1;
-    object-fit: cover;
-    /* The photo's black studio backdrop fades into the page background. */
-    -webkit-mask-image: radial-gradient(closest-side at 58% 52%, #000 62%, transparent 100%);
-    mask-image: radial-gradient(closest-side at 58% 52%, #000 62%, transparent 100%);
+    border-radius: 50%;
+    overflow: hidden;
+    color: #000;
+    -webkit-mask: var(--mask-animated) center / 100% 100% no-repeat;
+    mask: var(--mask-animated) center / 100% 100% no-repeat;
 }
+/* main.js sets this while the hero is off screen, so nothing repaints there. */
+.avatar.is-paused {
+    -webkit-mask-image: var(--mask-static);
+    mask-image: var(--mask-static);
+}
+.avatar::before,
+.avatar::after,
+.avatar-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 50%;
+    border: 8px solid;
+}
+.avatar::before { filter: url(#squiggly-1); }
+.avatar::after { filter: url(#squiggly-2); }
+.avatar-image::before { filter: url(#squiggly-0); }
+
+.avatar-image { position: absolute; inset: 0; }
+/* The source is 1080px square with the subject right of centre. */
+.avatar-image img {
+    position: absolute;
+    left: -33%;
+    top: -18.5%;
+    width: 133%;
+    max-width: none;
+    height: auto;
+}
+.avatar-filters { position: absolute; width: 0; height: 0; }
 
 /* Sections */
 .section { padding: 96px 0; border-top: 1px solid var(--border); }
@@ -305,9 +345,15 @@ a { color: inherit; }
     .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     .hero { padding: 48px 0 72px; }
-    .hero-grid { grid-template-columns: 1fr; gap: 24px; }
+    .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
     .hero-photo { order: -1; }
-    .hero-photo img { width: min(300px, 80%); }
+    /*
+     * The SVG filters distort by a fixed number of pixels, so a narrower avatar
+     * would pull the rings onto the face. Scaling the desktop-sized avatar down
+     * keeps the effect in proportion.
+     */
+    .hero-photo { height: 264px; min-width: 0; align-items: center; }
+    .avatar { width: 440px; flex: none; transform: scale(0.6); }
     .hero-role { font-size: 16px; }
     .btn-primary { padding: 14px 56px; }
 
@@ -323,6 +369,10 @@ a { color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
+    .avatar {
+        -webkit-mask-image: var(--mask-static);
+        mask-image: var(--mask-static);
+    }
     * { transition: none !important; }
 }
 .nowrap { white-space: nowrap; }
